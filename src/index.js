@@ -8,16 +8,18 @@ import Dashboard from './components/views/Dashboard/EnviornmentCaptureResults';
 import Lessons from './components/views/Lessons';
 import PlantSearchEngine from './components/views/PlantSearchEngine'
 import Faq from './components/views/Faq'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
       <div className="navigation-container">
-        <Link to='/home'>Homepage</Link>
-        <Link to='/lessons'>Lessons</Link>
+        <Link to='/home'>Manual Capture</Link>
+        {/* TODO: Uncomment files when complete. Only in progress or finalized pages are not commented out */}
+        {/* <Link to='/lessons'>Lessons</Link>
         <Link to='/plantIdentification'>Plant Identification</Link>
-        <Link to='/faq'>FAQL</Link>
-        <Link to='/dashboard'>Garden Monitoring Dashboard</Link>
+        <Link to='/faq'>FAQL</Link> */}
+        <Link to='/dashboard'>Recipes</Link>
 
       </div>
       <Routes>
